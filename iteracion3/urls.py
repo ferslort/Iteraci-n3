@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.page_index),
     path('user/', views.page_user),
+    path('registro-proveedor/', views.page_registerSupplier, name="saveSupplier")
 ]
