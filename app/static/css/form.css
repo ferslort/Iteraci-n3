@@ -1,0 +1,44 @@
+.formSupplier {
+  margin-top: 10rem;
+}
+
+.formSupplier fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 2.2rem 0;
+  width: 100%;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  padding: 1.2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+label {
+  font-size: 1.6rem;
+  margin: 0 0 0 1rem;
+  font-weight: 600;
+  color: rgb(78, 78, 78);
+}
+
+button {
+  border: none;
+  padding: 1rem 1.2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: #00bcd4;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 868px) {
+  .formSupplier fieldset {
+    width: 50%;
+    margin: 2rem auto;
+  }
+}
