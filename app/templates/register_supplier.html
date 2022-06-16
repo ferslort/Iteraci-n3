@@ -1,0 +1,33 @@
+{% extends 'layout.html'%}{% block content%}
+<h1>Formulario de Registro</h1>
+<div>
+  <form
+    method="post"
+    class="formSupplier"
+    action="{% url 'saveSupplier' %}"
+  >
+
+  {% csrf_token %}
+
+    <fieldset>
+      <label for="razon">Razón Social:</label>
+      <input type="text" name="razon" placeholder="Razón Social" required />
+    </fieldset>
+    <fieldset>
+      <label for="address">Dirección:</label>
+      <input type="text" name="address" placeholder="Dirección" required />
+    </fieldset>
+    <fieldset>
+      <label for="phone">Teléfono:</label>
+      <input type="text" name="phone" placeholder="Teléfono" required />
+    </fieldset>
+    <fieldset>
+      <label for="email">Email:</label>
+      <input type="text" name="email" placeholder="Email" required />
+    </fieldset>
+    <fieldset>
+      <button type="submit">Guardar</button>
+    </fieldset>
+  </form>
+</div>
+{% endblock%}
