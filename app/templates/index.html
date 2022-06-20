@@ -1,7 +1,11 @@
 {% extends 'layout.html' %}
-
 {% block content %}
-
+{% if messages %} {% for message in messages %}
+  <div class="alert-error">
+    <p>{{ message }}</p>
+  </div>
+  {% endfor %}
+{% endif %}
 <p>Pagina Principal</p>
 
 {% endblock%}
