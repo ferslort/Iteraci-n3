@@ -5,27 +5,27 @@
 
   {% for user in users%}
   <div class="containerUser__item">
-  <div class="containerUser__detail">
-    <strong>Nombre: </strong>
-    <span>{{user.name}}</span>
+    <div class="containerUser__detail">
+      <strong>Nombre: </strong>
+      <span>{{user.email}}</span>
+    </div>
+    <div class="containerUser__detail">
+      <strong>Apellido: </strong>
+      <span>{{user.last_name}}</span>
+    </div>
+    <div class="containerUser__detail">
+      <strong>Edad: </strong>
+      <span>{{user.age}}</span>
+    </div>
+    <div class="containerUser__detail">
+      <strong>Dirección: </strong>
+      <span>{{user.address}}</span>
+    </div>
+    <div class="containerUser__detail">
+      <strong>Teléfono: </strong>
+      <span>{{user.phone}}</span>
+    </div>
   </div>
-   <div class="containerUser__detail">
-    <strong>Apellido: </strong>
-    <span>{{user.lastName}}</span>
-  </div>
-   <div class="containerUser__detail">
-    <strong>Edad: </strong>
-    <span>{{user.age}}</span>
-  </div>
-   <div class="containerUser__detail">
-    <strong>Dirección: </strong>
-    <span>{{user.address}}</span>
-  </div>
-   <div class="containerUser__detail">
-    <strong>Teléfono: </strong>
-    <span>{{user.phone}}</span>
-  </div>
-</div>
   {% endfor %}
 </div>
 
