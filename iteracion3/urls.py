@@ -18,6 +18,7 @@ from django.urls import path
 
 from app import views
 from user import views as user_views
+from post import views as post_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,8 @@ urlpatterns = [
     path('login/', user_views.page_login, name='login'),
     path('register/', user_views.register_page, name='register'),
     path('users/', user_views.usersList_page, name='users'),
+    path('post/', post_views.post, name='post'),
+    path('post/create/', post_views.create_post, name='create_post'),
+    path('post/delete/<id>', post_views.delete_post, name='delete_post'),
+    path('post/edit/<id>', post_views.edit_post, name='edit_post'),
 ]
